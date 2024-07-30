@@ -1,0 +1,47 @@
+.user-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.user-card {
+  max-width: 400px;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.card-link {
+  font-weight: 700;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .user-container {
+    grid-template-columns: 1fr;
+  }
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input-group > input {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .user-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+  }
+  .user-card {
+    width: 100%;
+  }
+}
